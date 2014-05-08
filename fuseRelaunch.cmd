@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1_isim_beh.exe" -prj "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1_beh.prj" "work.task1" 

@@ -1,0 +1,75 @@
+V3 36
+FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" 2014/05/07.20:18:54 P.15xf
+EN work/mips 1399515551 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/controller 1399515552 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/maindec 1399515553 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/aludec 1399515554 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/datapath 1399515555 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623
+EN work/alu 1399515556 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+EN work/regfile 1399515557 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+EN work/adder 1399515558 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+EN work/sl2 1399515559 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/signext 1399515560 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+EN work/flopr 1399515561 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623
+EN work/mux2 1399515562 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      PB ieee/std_logic_1164 1335251622
+AR work/mips/struct 1399515563 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/mips 1399515551 CP controller CP datapath
+AR work/controller/struct 1399515564 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/controller 1399515552 CP maindec CP aludec
+AR work/maindec/behave 1399515565 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/maindec 1399515553
+AR work/aludec/behave 1399515566 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/aludec 1399515554
+AR work/datapath/struct 1399515567 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/datapath 1399515555 CP flopr CP adder CP sl2 CP mux2 CP regfile \
+      CP signext CP alu
+AR work/alu/behave 1399515568 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/alu 1399515556
+AR work/regfile/behave 1399515569 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/regfile 1399515557
+AR work/adder/behave 1399515570 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/adder 1399515558
+AR work/sl2/behave 1399515571 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/sl2 1399515559
+AR work/signext/behave 1399515572 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/signext 1399515560
+AR work/flopr/asynchronous 1399515573 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/flopr 1399515561
+AR work/mux2/behave 1399515574 \
+      FL "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" \
+      EN work/mux2 1399515562

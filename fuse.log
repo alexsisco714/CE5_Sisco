@@ -1,0 +1,33 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1_isim_beh.exe" -prj "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1_beh.prj" "work.task1" 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" into library work
+Parsing VHDL file "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling architecture behave of entity maindec [maindec_default]
+Compiling architecture behave of entity aludec [aludec_default]
+Compiling architecture struct of entity controller [controller_default]
+Compiling package std_logic_unsigned
+Compiling architecture asynchronous of entity flopr [\flopr(32)\]
+Compiling architecture behave of entity adder [adder_default]
+Compiling architecture behave of entity sl2 [sl2_default]
+Compiling architecture behave of entity mux2 [\mux2(32)\]
+Compiling architecture behave of entity regfile [regfile_default]
+Compiling architecture behave of entity mux2 [\mux2(5)\]
+Compiling architecture behave of entity signext [signext_default]
+Compiling architecture behave of entity alu [alu_default]
+Compiling architecture struct of entity datapath [datapath_default]
+Compiling architecture struct of entity mips [mips_default]
+Compiling architecture behavior of entity task1
+Time Resolution for simulation is 1ps.
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 31 VHDL Units
+Built simulation executable C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/task1_isim_beh.exe
+Fuse Memory Usage: 32928 KB
+Fuse CPU Usage: 779 ms

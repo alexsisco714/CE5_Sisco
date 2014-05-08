@@ -1,0 +1,1293 @@
+--------------------------------------------------------------------------------
+Release 14.1 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml mips.twx mips.ncd -o mips.twr mips.pcf
+
+Design file:              mips.ncd
+Physical constraint file: mips.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-04-23)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+instr<0>    |   16.493(R)|   -0.613(R)|clk_BUFGP         |   0.000|
+instr<1>    |   17.243(R)|   -1.096(R)|clk_BUFGP         |   0.000|
+instr<2>    |   14.638(R)|   -0.085(R)|clk_BUFGP         |   0.000|
+instr<3>    |   13.048(R)|   -0.451(R)|clk_BUFGP         |   0.000|
+instr<4>    |   12.004(R)|   -0.620(R)|clk_BUFGP         |   0.000|
+instr<5>    |   12.334(R)|   -2.052(R)|clk_BUFGP         |   0.000|
+instr<6>    |   13.428(R)|   -0.289(R)|clk_BUFGP         |   0.000|
+instr<7>    |   11.944(R)|   -1.168(R)|clk_BUFGP         |   0.000|
+instr<8>    |   11.430(R)|   -1.560(R)|clk_BUFGP         |   0.000|
+instr<9>    |   11.828(R)|   -0.299(R)|clk_BUFGP         |   0.000|
+instr<10>   |   10.425(R)|   -0.984(R)|clk_BUFGP         |   0.000|
+instr<11>   |   11.171(R)|   -0.405(R)|clk_BUFGP         |   0.000|
+instr<12>   |   10.456(R)|   -0.360(R)|clk_BUFGP         |   0.000|
+instr<13>   |   10.286(R)|    0.011(R)|clk_BUFGP         |   0.000|
+instr<14>   |    9.948(R)|   -0.807(R)|clk_BUFGP         |   0.000|
+instr<15>   |   14.172(R)|   -1.550(R)|clk_BUFGP         |   0.000|
+instr<16>   |   16.262(R)|   -0.220(R)|clk_BUFGP         |   0.000|
+instr<17>   |   16.457(R)|   -0.991(R)|clk_BUFGP         |   0.000|
+instr<18>   |   16.211(R)|   -1.504(R)|clk_BUFGP         |   0.000|
+instr<19>   |   17.243(R)|   -1.432(R)|clk_BUFGP         |   0.000|
+instr<20>   |   17.502(R)|   -2.121(R)|clk_BUFGP         |   0.000|
+instr<21>   |   14.713(R)|   -1.634(R)|clk_BUFGP         |   0.000|
+instr<22>   |   15.204(R)|   -3.572(R)|clk_BUFGP         |   0.000|
+instr<23>   |   14.968(R)|   -3.757(R)|clk_BUFGP         |   0.000|
+instr<24>   |   14.771(R)|   -1.828(R)|clk_BUFGP         |   0.000|
+instr<25>   |   15.067(R)|   -1.818(R)|clk_BUFGP         |   0.000|
+instr<26>   |   16.466(R)|   -0.429(R)|clk_BUFGP         |   0.000|
+instr<27>   |   16.739(R)|   -0.648(R)|clk_BUFGP         |   0.000|
+instr<28>   |   17.807(R)|   -0.853(R)|clk_BUFGP         |   0.000|
+instr<29>   |   16.644(R)|   -0.210(R)|clk_BUFGP         |   0.000|
+instr<31>   |   17.181(R)|   -1.002(R)|clk_BUFGP         |   0.000|
+readdata<0> |    3.089(R)|   -0.501(R)|clk_BUFGP         |   0.000|
+readdata<1> |    2.858(R)|   -0.577(R)|clk_BUFGP         |   0.000|
+readdata<2> |    2.722(R)|   -0.068(R)|clk_BUFGP         |   0.000|
+readdata<3> |    1.875(R)|    0.054(R)|clk_BUFGP         |   0.000|
+readdata<4> |    2.367(R)|   -0.124(R)|clk_BUFGP         |   0.000|
+readdata<5> |    4.093(R)|   -0.499(R)|clk_BUFGP         |   0.000|
+readdata<6> |    3.622(R)|   -1.069(R)|clk_BUFGP         |   0.000|
+readdata<7> |    3.819(R)|   -0.938(R)|clk_BUFGP         |   0.000|
+readdata<8> |    2.548(R)|   -0.450(R)|clk_BUFGP         |   0.000|
+readdata<9> |    2.781(R)|   -0.473(R)|clk_BUFGP         |   0.000|
+readdata<10>|    3.992(R)|   -0.993(R)|clk_BUFGP         |   0.000|
+readdata<11>|    2.766(R)|   -0.487(R)|clk_BUFGP         |   0.000|
+readdata<12>|    4.276(R)|   -0.991(R)|clk_BUFGP         |   0.000|
+readdata<13>|    3.786(R)|   -1.159(R)|clk_BUFGP         |   0.000|
+readdata<14>|    4.394(R)|   -1.472(R)|clk_BUFGP         |   0.000|
+readdata<15>|    3.477(R)|   -0.751(R)|clk_BUFGP         |   0.000|
+readdata<16>|    3.139(R)|   -0.939(R)|clk_BUFGP         |   0.000|
+readdata<17>|    4.247(R)|   -0.965(R)|clk_BUFGP         |   0.000|
+readdata<18>|    3.738(R)|   -0.674(R)|clk_BUFGP         |   0.000|
+readdata<19>|    4.767(R)|   -1.615(R)|clk_BUFGP         |   0.000|
+readdata<20>|    4.746(R)|   -1.385(R)|clk_BUFGP         |   0.000|
+readdata<21>|    4.749(R)|   -1.496(R)|clk_BUFGP         |   0.000|
+readdata<22>|    4.286(R)|   -1.530(R)|clk_BUFGP         |   0.000|
+readdata<23>|    2.674(R)|   -0.463(R)|clk_BUFGP         |   0.000|
+readdata<24>|    3.031(R)|   -0.788(R)|clk_BUFGP         |   0.000|
+readdata<25>|    4.189(R)|   -1.125(R)|clk_BUFGP         |   0.000|
+readdata<26>|    4.750(R)|   -1.465(R)|clk_BUFGP         |   0.000|
+readdata<27>|    3.571(R)|   -0.849(R)|clk_BUFGP         |   0.000|
+readdata<28>|    4.292(R)|   -1.518(R)|clk_BUFGP         |   0.000|
+readdata<29>|    3.533(R)|   -0.773(R)|clk_BUFGP         |   0.000|
+readdata<30>|    3.814(R)|   -1.368(R)|clk_BUFGP         |   0.000|
+readdata<31>|    4.044(R)|   -0.835(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+-------------+------------+------------------+--------+
+             | clk (edge) |                  | Clock  |
+Destination  |   to PAD   |Internal Clock(s) | Phase  |
+-------------+------------+------------------+--------+
+aluout<0>    |   16.644(R)|clk_BUFGP         |   0.000|
+aluout<1>    |   14.625(R)|clk_BUFGP         |   0.000|
+aluout<2>    |   14.828(R)|clk_BUFGP         |   0.000|
+aluout<3>    |   15.047(R)|clk_BUFGP         |   0.000|
+aluout<4>    |   15.908(R)|clk_BUFGP         |   0.000|
+aluout<5>    |   15.336(R)|clk_BUFGP         |   0.000|
+aluout<6>    |   15.144(R)|clk_BUFGP         |   0.000|
+aluout<7>    |   15.487(R)|clk_BUFGP         |   0.000|
+aluout<8>    |   16.198(R)|clk_BUFGP         |   0.000|
+aluout<9>    |   15.821(R)|clk_BUFGP         |   0.000|
+aluout<10>   |   15.528(R)|clk_BUFGP         |   0.000|
+aluout<11>   |   15.434(R)|clk_BUFGP         |   0.000|
+aluout<12>   |   15.097(R)|clk_BUFGP         |   0.000|
+aluout<13>   |   15.481(R)|clk_BUFGP         |   0.000|
+aluout<14>   |   15.390(R)|clk_BUFGP         |   0.000|
+aluout<15>   |   15.714(R)|clk_BUFGP         |   0.000|
+aluout<16>   |   15.900(R)|clk_BUFGP         |   0.000|
+aluout<17>   |   16.727(R)|clk_BUFGP         |   0.000|
+aluout<18>   |   15.789(R)|clk_BUFGP         |   0.000|
+aluout<19>   |   16.916(R)|clk_BUFGP         |   0.000|
+aluout<20>   |   16.313(R)|clk_BUFGP         |   0.000|
+aluout<21>   |   15.671(R)|clk_BUFGP         |   0.000|
+aluout<22>   |   15.380(R)|clk_BUFGP         |   0.000|
+aluout<23>   |   17.509(R)|clk_BUFGP         |   0.000|
+aluout<24>   |   17.376(R)|clk_BUFGP         |   0.000|
+aluout<25>   |   16.826(R)|clk_BUFGP         |   0.000|
+aluout<26>   |   17.356(R)|clk_BUFGP         |   0.000|
+aluout<27>   |   17.469(R)|clk_BUFGP         |   0.000|
+aluout<28>   |   17.324(R)|clk_BUFGP         |   0.000|
+aluout<29>   |   16.915(R)|clk_BUFGP         |   0.000|
+aluout<30>   |   16.975(R)|clk_BUFGP         |   0.000|
+aluout<31>   |   17.660(R)|clk_BUFGP         |   0.000|
+pc<2>        |    7.903(R)|clk_BUFGP         |   0.000|
+pc<3>        |    9.061(R)|clk_BUFGP         |   0.000|
+pc<4>        |    8.329(R)|clk_BUFGP         |   0.000|
+pc<5>        |    8.867(R)|clk_BUFGP         |   0.000|
+pc<6>        |    8.130(R)|clk_BUFGP         |   0.000|
+pc<7>        |    8.343(R)|clk_BUFGP         |   0.000|
+pc<8>        |    8.360(R)|clk_BUFGP         |   0.000|
+pc<9>        |    9.337(R)|clk_BUFGP         |   0.000|
+pc<10>       |    9.186(R)|clk_BUFGP         |   0.000|
+pc<11>       |    8.204(R)|clk_BUFGP         |   0.000|
+pc<12>       |    7.844(R)|clk_BUFGP         |   0.000|
+pc<13>       |    8.708(R)|clk_BUFGP         |   0.000|
+pc<14>       |    8.079(R)|clk_BUFGP         |   0.000|
+pc<15>       |    8.460(R)|clk_BUFGP         |   0.000|
+pc<16>       |    8.796(R)|clk_BUFGP         |   0.000|
+pc<17>       |    8.411(R)|clk_BUFGP         |   0.000|
+pc<18>       |    8.884(R)|clk_BUFGP         |   0.000|
+pc<19>       |    8.646(R)|clk_BUFGP         |   0.000|
+pc<20>       |    9.544(R)|clk_BUFGP         |   0.000|
+pc<21>       |    8.534(R)|clk_BUFGP         |   0.000|
+pc<22>       |    8.231(R)|clk_BUFGP         |   0.000|
+pc<23>       |    8.785(R)|clk_BUFGP         |   0.000|
+pc<24>       |    7.991(R)|clk_BUFGP         |   0.000|
+pc<25>       |    7.802(R)|clk_BUFGP         |   0.000|
+pc<26>       |    8.363(R)|clk_BUFGP         |   0.000|
+pc<27>       |    8.260(R)|clk_BUFGP         |   0.000|
+pc<28>       |    8.813(R)|clk_BUFGP         |   0.000|
+pc<29>       |    9.595(R)|clk_BUFGP         |   0.000|
+pc<30>       |    8.411(R)|clk_BUFGP         |   0.000|
+pc<31>       |    7.993(R)|clk_BUFGP         |   0.000|
+writedata<0> |   11.887(R)|clk_BUFGP         |   0.000|
+writedata<1> |   12.260(R)|clk_BUFGP         |   0.000|
+writedata<2> |   11.717(R)|clk_BUFGP         |   0.000|
+writedata<3> |   11.874(R)|clk_BUFGP         |   0.000|
+writedata<4> |   13.202(R)|clk_BUFGP         |   0.000|
+writedata<5> |   12.738(R)|clk_BUFGP         |   0.000|
+writedata<6> |   13.279(R)|clk_BUFGP         |   0.000|
+writedata<7> |   11.719(R)|clk_BUFGP         |   0.000|
+writedata<8> |   12.252(R)|clk_BUFGP         |   0.000|
+writedata<9> |   11.878(R)|clk_BUFGP         |   0.000|
+writedata<10>|   12.114(R)|clk_BUFGP         |   0.000|
+writedata<11>|   12.333(R)|clk_BUFGP         |   0.000|
+writedata<12>|   11.758(R)|clk_BUFGP         |   0.000|
+writedata<13>|   11.882(R)|clk_BUFGP         |   0.000|
+writedata<14>|   12.167(R)|clk_BUFGP         |   0.000|
+writedata<15>|   11.926(R)|clk_BUFGP         |   0.000|
+writedata<16>|   11.581(R)|clk_BUFGP         |   0.000|
+writedata<17>|   11.523(R)|clk_BUFGP         |   0.000|
+writedata<18>|   11.222(R)|clk_BUFGP         |   0.000|
+writedata<19>|    9.694(R)|clk_BUFGP         |   0.000|
+writedata<20>|   11.802(R)|clk_BUFGP         |   0.000|
+writedata<21>|   10.804(R)|clk_BUFGP         |   0.000|
+writedata<22>|   11.455(R)|clk_BUFGP         |   0.000|
+writedata<23>|   11.627(R)|clk_BUFGP         |   0.000|
+writedata<24>|   10.627(R)|clk_BUFGP         |   0.000|
+writedata<25>|   10.908(R)|clk_BUFGP         |   0.000|
+writedata<26>|   10.689(R)|clk_BUFGP         |   0.000|
+writedata<27>|   10.788(R)|clk_BUFGP         |   0.000|
+writedata<28>|   11.740(R)|clk_BUFGP         |   0.000|
+writedata<29>|   10.998(R)|clk_BUFGP         |   0.000|
+writedata<30>|   10.562(R)|clk_BUFGP         |   0.000|
+writedata<31>|    9.953(R)|clk_BUFGP         |   0.000|
+-------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   13.816|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+instr<0>       |aluout<0>      |   18.704|
+instr<0>       |aluout<1>      |   15.962|
+instr<0>       |aluout<2>      |   16.421|
+instr<0>       |aluout<3>      |   16.814|
+instr<0>       |aluout<4>      |   17.944|
+instr<0>       |aluout<5>      |   17.332|
+instr<0>       |aluout<6>      |   17.136|
+instr<0>       |aluout<7>      |   17.479|
+instr<0>       |aluout<8>      |   18.254|
+instr<0>       |aluout<9>      |   17.877|
+instr<0>       |aluout<10>     |   17.589|
+instr<0>       |aluout<11>     |   17.495|
+instr<0>       |aluout<12>     |   17.158|
+instr<0>       |aluout<13>     |   17.542|
+instr<0>       |aluout<14>     |   17.450|
+instr<0>       |aluout<15>     |   17.774|
+instr<0>       |aluout<16>     |   17.960|
+instr<0>       |aluout<17>     |   18.787|
+instr<0>       |aluout<18>     |   17.849|
+instr<0>       |aluout<19>     |   18.976|
+instr<0>       |aluout<20>     |   18.373|
+instr<0>       |aluout<21>     |   17.731|
+instr<0>       |aluout<22>     |   17.440|
+instr<0>       |aluout<23>     |   19.569|
+instr<0>       |aluout<24>     |   19.436|
+instr<0>       |aluout<25>     |   18.886|
+instr<0>       |aluout<26>     |   19.416|
+instr<0>       |aluout<27>     |   19.529|
+instr<0>       |aluout<28>     |   19.384|
+instr<0>       |aluout<29>     |   18.975|
+instr<0>       |aluout<30>     |   19.035|
+instr<0>       |aluout<31>     |   19.720|
+instr<1>       |aluout<0>      |   19.454|
+instr<1>       |aluout<1>      |   16.712|
+instr<1>       |aluout<2>      |   17.171|
+instr<1>       |aluout<3>      |   17.564|
+instr<1>       |aluout<4>      |   18.694|
+instr<1>       |aluout<5>      |   18.082|
+instr<1>       |aluout<6>      |   17.886|
+instr<1>       |aluout<7>      |   18.229|
+instr<1>       |aluout<8>      |   19.004|
+instr<1>       |aluout<9>      |   18.627|
+instr<1>       |aluout<10>     |   18.339|
+instr<1>       |aluout<11>     |   18.245|
+instr<1>       |aluout<12>     |   17.908|
+instr<1>       |aluout<13>     |   18.292|
+instr<1>       |aluout<14>     |   18.200|
+instr<1>       |aluout<15>     |   18.524|
+instr<1>       |aluout<16>     |   18.710|
+instr<1>       |aluout<17>     |   19.537|
+instr<1>       |aluout<18>     |   18.599|
+instr<1>       |aluout<19>     |   19.726|
+instr<1>       |aluout<20>     |   19.123|
+instr<1>       |aluout<21>     |   18.481|
+instr<1>       |aluout<22>     |   18.190|
+instr<1>       |aluout<23>     |   20.319|
+instr<1>       |aluout<24>     |   20.186|
+instr<1>       |aluout<25>     |   19.636|
+instr<1>       |aluout<26>     |   20.166|
+instr<1>       |aluout<27>     |   20.279|
+instr<1>       |aluout<28>     |   20.134|
+instr<1>       |aluout<29>     |   19.725|
+instr<1>       |aluout<30>     |   19.785|
+instr<1>       |aluout<31>     |   20.470|
+instr<2>       |aluout<0>      |   16.849|
+instr<2>       |aluout<1>      |   14.107|
+instr<2>       |aluout<2>      |   14.566|
+instr<2>       |aluout<3>      |   14.959|
+instr<2>       |aluout<4>      |   16.089|
+instr<2>       |aluout<5>      |   15.477|
+instr<2>       |aluout<6>      |   15.281|
+instr<2>       |aluout<7>      |   15.624|
+instr<2>       |aluout<8>      |   16.399|
+instr<2>       |aluout<9>      |   16.022|
+instr<2>       |aluout<10>     |   15.734|
+instr<2>       |aluout<11>     |   15.640|
+instr<2>       |aluout<12>     |   15.303|
+instr<2>       |aluout<13>     |   15.687|
+instr<2>       |aluout<14>     |   15.595|
+instr<2>       |aluout<15>     |   15.919|
+instr<2>       |aluout<16>     |   16.105|
+instr<2>       |aluout<17>     |   16.932|
+instr<2>       |aluout<18>     |   15.994|
+instr<2>       |aluout<19>     |   17.121|
+instr<2>       |aluout<20>     |   16.518|
+instr<2>       |aluout<21>     |   15.876|
+instr<2>       |aluout<22>     |   15.585|
+instr<2>       |aluout<23>     |   17.714|
+instr<2>       |aluout<24>     |   17.581|
+instr<2>       |aluout<25>     |   17.031|
+instr<2>       |aluout<26>     |   17.561|
+instr<2>       |aluout<27>     |   17.674|
+instr<2>       |aluout<28>     |   17.529|
+instr<2>       |aluout<29>     |   17.120|
+instr<2>       |aluout<30>     |   17.180|
+instr<2>       |aluout<31>     |   17.865|
+instr<3>       |aluout<0>      |   15.259|
+instr<3>       |aluout<1>      |   11.708|
+instr<3>       |aluout<2>      |   11.808|
+instr<3>       |aluout<3>      |   13.189|
+instr<3>       |aluout<4>      |   14.568|
+instr<3>       |aluout<5>      |   13.956|
+instr<3>       |aluout<6>      |   13.760|
+instr<3>       |aluout<7>      |   14.103|
+instr<3>       |aluout<8>      |   14.814|
+instr<3>       |aluout<9>      |   14.437|
+instr<3>       |aluout<10>     |   14.144|
+instr<3>       |aluout<11>     |   14.050|
+instr<3>       |aluout<12>     |   13.713|
+instr<3>       |aluout<13>     |   14.097|
+instr<3>       |aluout<14>     |   14.005|
+instr<3>       |aluout<15>     |   14.329|
+instr<3>       |aluout<16>     |   14.515|
+instr<3>       |aluout<17>     |   15.342|
+instr<3>       |aluout<18>     |   14.404|
+instr<3>       |aluout<19>     |   15.531|
+instr<3>       |aluout<20>     |   14.928|
+instr<3>       |aluout<21>     |   14.286|
+instr<3>       |aluout<22>     |   13.995|
+instr<3>       |aluout<23>     |   16.124|
+instr<3>       |aluout<24>     |   15.991|
+instr<3>       |aluout<25>     |   15.441|
+instr<3>       |aluout<26>     |   15.971|
+instr<3>       |aluout<27>     |   16.084|
+instr<3>       |aluout<28>     |   15.939|
+instr<3>       |aluout<29>     |   15.530|
+instr<3>       |aluout<30>     |   15.590|
+instr<3>       |aluout<31>     |   16.275|
+instr<4>       |aluout<0>      |   14.215|
+instr<4>       |aluout<4>      |   13.078|
+instr<4>       |aluout<5>      |   12.640|
+instr<4>       |aluout<6>      |   12.716|
+instr<4>       |aluout<7>      |   13.059|
+instr<4>       |aluout<8>      |   13.770|
+instr<4>       |aluout<9>      |   13.393|
+instr<4>       |aluout<10>     |   13.100|
+instr<4>       |aluout<11>     |   13.006|
+instr<4>       |aluout<12>     |   12.669|
+instr<4>       |aluout<13>     |   13.053|
+instr<4>       |aluout<14>     |   12.961|
+instr<4>       |aluout<15>     |   13.285|
+instr<4>       |aluout<16>     |   13.471|
+instr<4>       |aluout<17>     |   14.298|
+instr<4>       |aluout<18>     |   13.360|
+instr<4>       |aluout<19>     |   14.487|
+instr<4>       |aluout<20>     |   13.884|
+instr<4>       |aluout<21>     |   13.242|
+instr<4>       |aluout<22>     |   12.951|
+instr<4>       |aluout<23>     |   15.080|
+instr<4>       |aluout<24>     |   14.947|
+instr<4>       |aluout<25>     |   14.397|
+instr<4>       |aluout<26>     |   14.927|
+instr<4>       |aluout<27>     |   15.040|
+instr<4>       |aluout<28>     |   14.895|
+instr<4>       |aluout<29>     |   14.486|
+instr<4>       |aluout<30>     |   14.546|
+instr<4>       |aluout<31>     |   15.231|
+instr<5>       |aluout<0>      |   14.545|
+instr<5>       |aluout<5>      |   12.721|
+instr<5>       |aluout<6>      |   13.046|
+instr<5>       |aluout<7>      |   13.389|
+instr<5>       |aluout<8>      |   14.100|
+instr<5>       |aluout<9>      |   13.723|
+instr<5>       |aluout<10>     |   13.430|
+instr<5>       |aluout<11>     |   13.336|
+instr<5>       |aluout<12>     |   12.999|
+instr<5>       |aluout<13>     |   13.383|
+instr<5>       |aluout<14>     |   13.291|
+instr<5>       |aluout<15>     |   13.615|
+instr<5>       |aluout<16>     |   13.801|
+instr<5>       |aluout<17>     |   14.628|
+instr<5>       |aluout<18>     |   13.690|
+instr<5>       |aluout<19>     |   14.817|
+instr<5>       |aluout<20>     |   14.214|
+instr<5>       |aluout<21>     |   13.572|
+instr<5>       |aluout<22>     |   13.281|
+instr<5>       |aluout<23>     |   15.410|
+instr<5>       |aluout<24>     |   15.277|
+instr<5>       |aluout<25>     |   14.727|
+instr<5>       |aluout<26>     |   15.257|
+instr<5>       |aluout<27>     |   15.370|
+instr<5>       |aluout<28>     |   15.225|
+instr<5>       |aluout<29>     |   14.816|
+instr<5>       |aluout<30>     |   14.876|
+instr<5>       |aluout<31>     |   15.561|
+instr<6>       |aluout<0>      |   15.639|
+instr<6>       |aluout<6>      |   13.694|
+instr<6>       |aluout<7>      |   14.211|
+instr<6>       |aluout<8>      |   15.194|
+instr<6>       |aluout<9>      |   14.817|
+instr<6>       |aluout<10>     |   14.524|
+instr<6>       |aluout<11>     |   14.430|
+instr<6>       |aluout<12>     |   14.093|
+instr<6>       |aluout<13>     |   14.477|
+instr<6>       |aluout<14>     |   14.385|
+instr<6>       |aluout<15>     |   14.709|
+instr<6>       |aluout<16>     |   14.895|
+instr<6>       |aluout<17>     |   15.722|
+instr<6>       |aluout<18>     |   14.784|
+instr<6>       |aluout<19>     |   15.911|
+instr<6>       |aluout<20>     |   15.308|
+instr<6>       |aluout<21>     |   14.666|
+instr<6>       |aluout<22>     |   14.375|
+instr<6>       |aluout<23>     |   16.504|
+instr<6>       |aluout<24>     |   16.371|
+instr<6>       |aluout<25>     |   15.821|
+instr<6>       |aluout<26>     |   16.351|
+instr<6>       |aluout<27>     |   16.464|
+instr<6>       |aluout<28>     |   16.319|
+instr<6>       |aluout<29>     |   15.910|
+instr<6>       |aluout<30>     |   15.970|
+instr<6>       |aluout<31>     |   16.655|
+instr<7>       |aluout<0>      |   14.155|
+instr<7>       |aluout<7>      |   12.478|
+instr<7>       |aluout<8>      |   13.710|
+instr<7>       |aluout<9>      |   13.333|
+instr<7>       |aluout<10>     |   13.040|
+instr<7>       |aluout<11>     |   12.946|
+instr<7>       |aluout<12>     |   12.609|
+instr<7>       |aluout<13>     |   12.993|
+instr<7>       |aluout<14>     |   12.901|
+instr<7>       |aluout<15>     |   13.225|
+instr<7>       |aluout<16>     |   13.411|
+instr<7>       |aluout<17>     |   14.238|
+instr<7>       |aluout<18>     |   13.300|
+instr<7>       |aluout<19>     |   14.427|
+instr<7>       |aluout<20>     |   13.824|
+instr<7>       |aluout<21>     |   13.182|
+instr<7>       |aluout<22>     |   12.891|
+instr<7>       |aluout<23>     |   15.020|
+instr<7>       |aluout<24>     |   14.887|
+instr<7>       |aluout<25>     |   14.337|
+instr<7>       |aluout<26>     |   14.867|
+instr<7>       |aluout<27>     |   14.980|
+instr<7>       |aluout<28>     |   14.835|
+instr<7>       |aluout<29>     |   14.426|
+instr<7>       |aluout<30>     |   14.486|
+instr<7>       |aluout<31>     |   15.171|
+instr<8>       |aluout<0>      |   13.641|
+instr<8>       |aluout<8>      |   12.750|
+instr<8>       |aluout<9>      |   12.547|
+instr<8>       |aluout<10>     |   12.526|
+instr<8>       |aluout<11>     |   12.432|
+instr<8>       |aluout<12>     |   12.095|
+instr<8>       |aluout<13>     |   12.479|
+instr<8>       |aluout<14>     |   12.387|
+instr<8>       |aluout<15>     |   12.711|
+instr<8>       |aluout<16>     |   12.897|
+instr<8>       |aluout<17>     |   13.724|
+instr<8>       |aluout<18>     |   12.786|
+instr<8>       |aluout<19>     |   13.913|
+instr<8>       |aluout<20>     |   13.310|
+instr<8>       |aluout<21>     |   12.668|
+instr<8>       |aluout<22>     |   12.377|
+instr<8>       |aluout<23>     |   14.506|
+instr<8>       |aluout<24>     |   14.373|
+instr<8>       |aluout<25>     |   13.823|
+instr<8>       |aluout<26>     |   14.353|
+instr<8>       |aluout<27>     |   14.466|
+instr<8>       |aluout<28>     |   14.321|
+instr<8>       |aluout<29>     |   13.912|
+instr<8>       |aluout<30>     |   13.972|
+instr<8>       |aluout<31>     |   14.657|
+instr<9>       |aluout<0>      |   14.039|
+instr<9>       |aluout<9>      |   12.696|
+instr<9>       |aluout<10>     |   12.924|
+instr<9>       |aluout<11>     |   12.830|
+instr<9>       |aluout<12>     |   12.493|
+instr<9>       |aluout<13>     |   12.877|
+instr<9>       |aluout<14>     |   12.785|
+instr<9>       |aluout<15>     |   13.109|
+instr<9>       |aluout<16>     |   13.295|
+instr<9>       |aluout<17>     |   14.122|
+instr<9>       |aluout<18>     |   13.184|
+instr<9>       |aluout<19>     |   14.311|
+instr<9>       |aluout<20>     |   13.708|
+instr<9>       |aluout<21>     |   13.066|
+instr<9>       |aluout<22>     |   12.775|
+instr<9>       |aluout<23>     |   14.904|
+instr<9>       |aluout<24>     |   14.771|
+instr<9>       |aluout<25>     |   14.221|
+instr<9>       |aluout<26>     |   14.751|
+instr<9>       |aluout<27>     |   14.864|
+instr<9>       |aluout<28>     |   14.719|
+instr<9>       |aluout<29>     |   14.310|
+instr<9>       |aluout<30>     |   14.370|
+instr<9>       |aluout<31>     |   15.055|
+instr<10>      |aluout<0>      |   12.636|
+instr<10>      |aluout<10>     |   11.075|
+instr<10>      |aluout<11>     |   11.155|
+instr<10>      |aluout<12>     |   11.090|
+instr<10>      |aluout<13>     |   11.474|
+instr<10>      |aluout<14>     |   11.382|
+instr<10>      |aluout<15>     |   11.706|
+instr<10>      |aluout<16>     |   11.892|
+instr<10>      |aluout<17>     |   12.719|
+instr<10>      |aluout<18>     |   11.781|
+instr<10>      |aluout<19>     |   12.908|
+instr<10>      |aluout<20>     |   12.305|
+instr<10>      |aluout<21>     |   11.663|
+instr<10>      |aluout<22>     |   11.372|
+instr<10>      |aluout<23>     |   13.501|
+instr<10>      |aluout<24>     |   13.368|
+instr<10>      |aluout<25>     |   12.818|
+instr<10>      |aluout<26>     |   13.348|
+instr<10>      |aluout<27>     |   13.461|
+instr<10>      |aluout<28>     |   13.316|
+instr<10>      |aluout<29>     |   12.907|
+instr<10>      |aluout<30>     |   12.967|
+instr<10>      |aluout<31>     |   13.652|
+instr<11>      |aluout<0>      |   13.382|
+instr<11>      |aluout<11>     |   11.652|
+instr<11>      |aluout<12>     |   11.836|
+instr<11>      |aluout<13>     |   12.220|
+instr<11>      |aluout<14>     |   12.128|
+instr<11>      |aluout<15>     |   12.452|
+instr<11>      |aluout<16>     |   12.638|
+instr<11>      |aluout<17>     |   13.465|
+instr<11>      |aluout<18>     |   12.527|
+instr<11>      |aluout<19>     |   13.654|
+instr<11>      |aluout<20>     |   13.051|
+instr<11>      |aluout<21>     |   12.409|
+instr<11>      |aluout<22>     |   12.118|
+instr<11>      |aluout<23>     |   14.247|
+instr<11>      |aluout<24>     |   14.114|
+instr<11>      |aluout<25>     |   13.564|
+instr<11>      |aluout<26>     |   14.094|
+instr<11>      |aluout<27>     |   14.207|
+instr<11>      |aluout<28>     |   14.062|
+instr<11>      |aluout<29>     |   13.653|
+instr<11>      |aluout<30>     |   13.713|
+instr<11>      |aluout<31>     |   14.398|
+instr<12>      |aluout<0>      |   12.667|
+instr<12>      |aluout<12>     |   10.675|
+instr<12>      |aluout<13>     |   11.233|
+instr<12>      |aluout<14>     |   11.413|
+instr<12>      |aluout<15>     |   11.737|
+instr<12>      |aluout<16>     |   11.923|
+instr<12>      |aluout<17>     |   12.750|
+instr<12>      |aluout<18>     |   11.812|
+instr<12>      |aluout<19>     |   12.939|
+instr<12>      |aluout<20>     |   12.336|
+instr<12>      |aluout<21>     |   11.694|
+instr<12>      |aluout<22>     |   11.403|
+instr<12>      |aluout<23>     |   13.532|
+instr<12>      |aluout<24>     |   13.399|
+instr<12>      |aluout<25>     |   12.849|
+instr<12>      |aluout<26>     |   13.379|
+instr<12>      |aluout<27>     |   13.492|
+instr<12>      |aluout<28>     |   13.347|
+instr<12>      |aluout<29>     |   12.938|
+instr<12>      |aluout<30>     |   12.998|
+instr<12>      |aluout<31>     |   13.683|
+instr<13>      |aluout<0>      |   12.497|
+instr<13>      |aluout<13>     |   10.814|
+instr<13>      |aluout<14>     |   11.243|
+instr<13>      |aluout<15>     |   11.567|
+instr<13>      |aluout<16>     |   11.753|
+instr<13>      |aluout<17>     |   12.580|
+instr<13>      |aluout<18>     |   11.642|
+instr<13>      |aluout<19>     |   12.769|
+instr<13>      |aluout<20>     |   12.166|
+instr<13>      |aluout<21>     |   11.524|
+instr<13>      |aluout<22>     |   11.233|
+instr<13>      |aluout<23>     |   13.362|
+instr<13>      |aluout<24>     |   13.229|
+instr<13>      |aluout<25>     |   12.679|
+instr<13>      |aluout<26>     |   13.209|
+instr<13>      |aluout<27>     |   13.322|
+instr<13>      |aluout<28>     |   13.177|
+instr<13>      |aluout<29>     |   12.768|
+instr<13>      |aluout<30>     |   12.828|
+instr<13>      |aluout<31>     |   13.513|
+instr<14>      |aluout<0>      |   12.159|
+instr<14>      |aluout<14>     |   10.459|
+instr<14>      |aluout<15>     |   10.957|
+instr<14>      |aluout<16>     |   11.415|
+instr<14>      |aluout<17>     |   12.242|
+instr<14>      |aluout<18>     |   11.304|
+instr<14>      |aluout<19>     |   12.431|
+instr<14>      |aluout<20>     |   11.828|
+instr<14>      |aluout<21>     |   11.186|
+instr<14>      |aluout<22>     |   10.895|
+instr<14>      |aluout<23>     |   13.024|
+instr<14>      |aluout<24>     |   12.891|
+instr<14>      |aluout<25>     |   12.341|
+instr<14>      |aluout<26>     |   12.871|
+instr<14>      |aluout<27>     |   12.984|
+instr<14>      |aluout<28>     |   12.839|
+instr<14>      |aluout<29>     |   12.430|
+instr<14>      |aluout<30>     |   12.490|
+instr<14>      |aluout<31>     |   13.175|
+instr<15>      |aluout<0>      |   16.383|
+instr<15>      |aluout<15>     |   13.825|
+instr<15>      |aluout<16>     |   14.532|
+instr<15>      |aluout<17>     |   15.359|
+instr<15>      |aluout<18>     |   14.798|
+instr<15>      |aluout<19>     |   16.134|
+instr<15>      |aluout<20>     |   16.052|
+instr<15>      |aluout<21>     |   15.410|
+instr<15>      |aluout<22>     |   15.119|
+instr<15>      |aluout<23>     |   17.248|
+instr<15>      |aluout<24>     |   17.115|
+instr<15>      |aluout<25>     |   16.565|
+instr<15>      |aluout<26>     |   17.095|
+instr<15>      |aluout<27>     |   17.208|
+instr<15>      |aluout<28>     |   17.063|
+instr<15>      |aluout<29>     |   16.654|
+instr<15>      |aluout<30>     |   16.714|
+instr<15>      |aluout<31>     |   17.399|
+instr<16>      |aluout<0>      |   18.473|
+instr<16>      |aluout<1>      |   15.108|
+instr<16>      |aluout<2>      |   15.311|
+instr<16>      |aluout<3>      |   15.530|
+instr<16>      |aluout<4>      |   16.388|
+instr<16>      |aluout<5>      |   15.776|
+instr<16>      |aluout<6>      |   15.580|
+instr<16>      |aluout<7>      |   15.923|
+instr<16>      |aluout<8>      |   17.130|
+instr<16>      |aluout<9>      |   17.130|
+instr<16>      |aluout<10>     |   17.358|
+instr<16>      |aluout<11>     |   17.264|
+instr<16>      |aluout<12>     |   16.927|
+instr<16>      |aluout<13>     |   17.311|
+instr<16>      |aluout<14>     |   17.219|
+instr<16>      |aluout<15>     |   17.543|
+instr<16>      |aluout<16>     |   17.729|
+instr<16>      |aluout<17>     |   18.556|
+instr<16>      |aluout<18>     |   17.618|
+instr<16>      |aluout<19>     |   18.745|
+instr<16>      |aluout<20>     |   18.142|
+instr<16>      |aluout<21>     |   17.500|
+instr<16>      |aluout<22>     |   17.209|
+instr<16>      |aluout<23>     |   19.338|
+instr<16>      |aluout<24>     |   19.205|
+instr<16>      |aluout<25>     |   18.655|
+instr<16>      |aluout<26>     |   19.185|
+instr<16>      |aluout<27>     |   19.298|
+instr<16>      |aluout<28>     |   19.153|
+instr<16>      |aluout<29>     |   18.744|
+instr<16>      |aluout<30>     |   18.804|
+instr<16>      |aluout<31>     |   19.489|
+instr<16>      |writedata<0>   |   12.376|
+instr<16>      |writedata<1>   |   12.872|
+instr<16>      |writedata<2>   |   12.003|
+instr<16>      |writedata<3>   |   12.952|
+instr<16>      |writedata<4>   |   13.581|
+instr<16>      |writedata<5>   |   13.302|
+instr<16>      |writedata<6>   |   13.748|
+instr<16>      |writedata<7>   |   12.187|
+instr<16>      |writedata<8>   |   14.394|
+instr<16>      |writedata<9>   |   13.982|
+instr<16>      |writedata<10>  |   12.166|
+instr<16>      |writedata<11>  |   13.524|
+instr<16>      |writedata<12>  |   12.783|
+instr<16>      |writedata<13>  |   12.922|
+instr<16>      |writedata<14>  |   12.378|
+instr<16>      |writedata<15>  |   12.302|
+instr<16>      |writedata<16>  |   13.005|
+instr<16>      |writedata<17>  |   12.310|
+instr<16>      |writedata<18>  |   12.387|
+instr<16>      |writedata<19>  |   10.453|
+instr<16>      |writedata<20>  |   12.479|
+instr<16>      |writedata<21>  |   11.524|
+instr<16>      |writedata<22>  |   12.619|
+instr<16>      |writedata<23>  |   12.317|
+instr<16>      |writedata<24>  |   11.977|
+instr<16>      |writedata<25>  |   12.111|
+instr<16>      |writedata<26>  |   12.443|
+instr<16>      |writedata<27>  |   12.094|
+instr<16>      |writedata<28>  |   12.560|
+instr<16>      |writedata<29>  |   11.688|
+instr<16>      |writedata<30>  |   11.052|
+instr<16>      |writedata<31>  |    9.831|
+instr<17>      |aluout<0>      |   18.668|
+instr<17>      |aluout<1>      |   15.303|
+instr<17>      |aluout<2>      |   15.506|
+instr<17>      |aluout<3>      |   15.725|
+instr<17>      |aluout<4>      |   16.583|
+instr<17>      |aluout<5>      |   15.971|
+instr<17>      |aluout<6>      |   15.775|
+instr<17>      |aluout<7>      |   16.118|
+instr<17>      |aluout<8>      |   17.325|
+instr<17>      |aluout<9>      |   17.325|
+instr<17>      |aluout<10>     |   17.553|
+instr<17>      |aluout<11>     |   17.459|
+instr<17>      |aluout<12>     |   17.122|
+instr<17>      |aluout<13>     |   17.506|
+instr<17>      |aluout<14>     |   17.414|
+instr<17>      |aluout<15>     |   17.738|
+instr<17>      |aluout<16>     |   17.924|
+instr<17>      |aluout<17>     |   18.751|
+instr<17>      |aluout<18>     |   17.813|
+instr<17>      |aluout<19>     |   18.940|
+instr<17>      |aluout<20>     |   18.337|
+instr<17>      |aluout<21>     |   17.695|
+instr<17>      |aluout<22>     |   17.404|
+instr<17>      |aluout<23>     |   19.533|
+instr<17>      |aluout<24>     |   19.400|
+instr<17>      |aluout<25>     |   18.850|
+instr<17>      |aluout<26>     |   19.380|
+instr<17>      |aluout<27>     |   19.493|
+instr<17>      |aluout<28>     |   19.348|
+instr<17>      |aluout<29>     |   18.939|
+instr<17>      |aluout<30>     |   18.999|
+instr<17>      |aluout<31>     |   19.684|
+instr<17>      |writedata<0>   |   12.571|
+instr<17>      |writedata<1>   |   13.067|
+instr<17>      |writedata<2>   |   12.198|
+instr<17>      |writedata<3>   |   13.147|
+instr<17>      |writedata<4>   |   13.776|
+instr<17>      |writedata<5>   |   13.497|
+instr<17>      |writedata<6>   |   13.943|
+instr<17>      |writedata<7>   |   12.382|
+instr<17>      |writedata<8>   |   14.589|
+instr<17>      |writedata<9>   |   14.177|
+instr<17>      |writedata<10>  |   12.361|
+instr<17>      |writedata<11>  |   13.719|
+instr<17>      |writedata<12>  |   12.978|
+instr<17>      |writedata<13>  |   13.117|
+instr<17>      |writedata<14>  |   12.501|
+instr<17>      |writedata<15>  |   12.497|
+instr<17>      |writedata<16>  |   13.200|
+instr<17>      |writedata<17>  |   12.505|
+instr<17>      |writedata<18>  |   12.582|
+instr<17>      |writedata<19>  |   10.648|
+instr<17>      |writedata<20>  |   12.674|
+instr<17>      |writedata<21>  |   11.719|
+instr<17>      |writedata<22>  |   12.814|
+instr<17>      |writedata<23>  |   12.437|
+instr<17>      |writedata<24>  |   12.172|
+instr<17>      |writedata<25>  |   12.306|
+instr<17>      |writedata<26>  |   12.638|
+instr<17>      |writedata<27>  |   12.289|
+instr<17>      |writedata<28>  |   12.755|
+instr<17>      |writedata<29>  |   11.778|
+instr<17>      |writedata<30>  |   11.247|
+instr<17>      |writedata<31>  |   10.026|
+instr<18>      |aluout<0>      |   18.422|
+instr<18>      |aluout<1>      |   15.057|
+instr<18>      |aluout<2>      |   15.260|
+instr<18>      |aluout<3>      |   15.479|
+instr<18>      |aluout<4>      |   16.337|
+instr<18>      |aluout<5>      |   15.725|
+instr<18>      |aluout<6>      |   15.529|
+instr<18>      |aluout<7>      |   15.872|
+instr<18>      |aluout<8>      |   17.079|
+instr<18>      |aluout<9>      |   17.079|
+instr<18>      |aluout<10>     |   17.307|
+instr<18>      |aluout<11>     |   17.213|
+instr<18>      |aluout<12>     |   16.876|
+instr<18>      |aluout<13>     |   17.260|
+instr<18>      |aluout<14>     |   17.168|
+instr<18>      |aluout<15>     |   17.492|
+instr<18>      |aluout<16>     |   17.678|
+instr<18>      |aluout<17>     |   18.505|
+instr<18>      |aluout<18>     |   17.567|
+instr<18>      |aluout<19>     |   18.694|
+instr<18>      |aluout<20>     |   18.091|
+instr<18>      |aluout<21>     |   17.449|
+instr<18>      |aluout<22>     |   17.158|
+instr<18>      |aluout<23>     |   19.287|
+instr<18>      |aluout<24>     |   19.154|
+instr<18>      |aluout<25>     |   18.604|
+instr<18>      |aluout<26>     |   19.134|
+instr<18>      |aluout<27>     |   19.247|
+instr<18>      |aluout<28>     |   19.102|
+instr<18>      |aluout<29>     |   18.693|
+instr<18>      |aluout<30>     |   18.753|
+instr<18>      |aluout<31>     |   19.438|
+instr<18>      |writedata<0>   |   12.325|
+instr<18>      |writedata<1>   |   12.821|
+instr<18>      |writedata<2>   |   11.952|
+instr<18>      |writedata<3>   |   12.901|
+instr<18>      |writedata<4>   |   13.530|
+instr<18>      |writedata<5>   |   13.251|
+instr<18>      |writedata<6>   |   13.697|
+instr<18>      |writedata<7>   |   12.136|
+instr<18>      |writedata<8>   |   14.343|
+instr<18>      |writedata<9>   |   13.931|
+instr<18>      |writedata<10>  |   12.115|
+instr<18>      |writedata<11>  |   13.473|
+instr<18>      |writedata<12>  |   12.732|
+instr<18>      |writedata<13>  |   12.871|
+instr<18>      |writedata<14>  |   12.255|
+instr<18>      |writedata<15>  |   12.251|
+instr<18>      |writedata<16>  |   12.954|
+instr<18>      |writedata<17>  |   12.259|
+instr<18>      |writedata<18>  |   12.336|
+instr<18>      |writedata<19>  |   10.402|
+instr<18>      |writedata<20>  |   12.428|
+instr<18>      |writedata<21>  |   11.473|
+instr<18>      |writedata<22>  |   12.568|
+instr<18>      |writedata<23>  |   12.191|
+instr<18>      |writedata<24>  |   11.926|
+instr<18>      |writedata<25>  |   12.060|
+instr<18>      |writedata<26>  |   12.392|
+instr<18>      |writedata<27>  |   12.043|
+instr<18>      |writedata<28>  |   12.509|
+instr<18>      |writedata<29>  |   11.532|
+instr<18>      |writedata<30>  |   11.001|
+instr<18>      |writedata<31>  |    9.907|
+instr<19>      |aluout<0>      |   19.454|
+instr<19>      |aluout<1>      |   16.089|
+instr<19>      |aluout<2>      |   16.292|
+instr<19>      |aluout<3>      |   16.511|
+instr<19>      |aluout<4>      |   17.369|
+instr<19>      |aluout<5>      |   16.757|
+instr<19>      |aluout<6>      |   16.561|
+instr<19>      |aluout<7>      |   16.904|
+instr<19>      |aluout<8>      |   18.111|
+instr<19>      |aluout<9>      |   18.111|
+instr<19>      |aluout<10>     |   18.339|
+instr<19>      |aluout<11>     |   18.245|
+instr<19>      |aluout<12>     |   17.908|
+instr<19>      |aluout<13>     |   18.292|
+instr<19>      |aluout<14>     |   18.200|
+instr<19>      |aluout<15>     |   18.524|
+instr<19>      |aluout<16>     |   18.710|
+instr<19>      |aluout<17>     |   19.537|
+instr<19>      |aluout<18>     |   18.599|
+instr<19>      |aluout<19>     |   19.726|
+instr<19>      |aluout<20>     |   19.123|
+instr<19>      |aluout<21>     |   18.481|
+instr<19>      |aluout<22>     |   18.190|
+instr<19>      |aluout<23>     |   20.319|
+instr<19>      |aluout<24>     |   20.186|
+instr<19>      |aluout<25>     |   19.636|
+instr<19>      |aluout<26>     |   20.166|
+instr<19>      |aluout<27>     |   20.279|
+instr<19>      |aluout<28>     |   20.134|
+instr<19>      |aluout<29>     |   19.725|
+instr<19>      |aluout<30>     |   19.785|
+instr<19>      |aluout<31>     |   20.470|
+instr<19>      |writedata<0>   |   13.357|
+instr<19>      |writedata<1>   |   13.853|
+instr<19>      |writedata<2>   |   12.984|
+instr<19>      |writedata<3>   |   13.933|
+instr<19>      |writedata<4>   |   14.562|
+instr<19>      |writedata<5>   |   14.283|
+instr<19>      |writedata<6>   |   14.729|
+instr<19>      |writedata<7>   |   13.168|
+instr<19>      |writedata<8>   |   15.375|
+instr<19>      |writedata<9>   |   14.963|
+instr<19>      |writedata<10>  |   13.147|
+instr<19>      |writedata<11>  |   14.505|
+instr<19>      |writedata<12>  |   13.764|
+instr<19>      |writedata<13>  |   13.903|
+instr<19>      |writedata<14>  |   13.287|
+instr<19>      |writedata<15>  |   13.283|
+instr<19>      |writedata<16>  |   13.986|
+instr<19>      |writedata<17>  |   13.291|
+instr<19>      |writedata<18>  |   13.368|
+instr<19>      |writedata<19>  |   11.434|
+instr<19>      |writedata<20>  |   13.460|
+instr<19>      |writedata<21>  |   12.505|
+instr<19>      |writedata<22>  |   13.600|
+instr<19>      |writedata<23>  |   13.223|
+instr<19>      |writedata<24>  |   12.958|
+instr<19>      |writedata<25>  |   13.092|
+instr<19>      |writedata<26>  |   13.424|
+instr<19>      |writedata<27>  |   13.075|
+instr<19>      |writedata<28>  |   13.541|
+instr<19>      |writedata<29>  |   12.564|
+instr<19>      |writedata<30>  |   12.033|
+instr<19>      |writedata<31>  |   10.812|
+instr<20>      |aluout<0>      |   19.713|
+instr<20>      |aluout<1>      |   16.348|
+instr<20>      |aluout<2>      |   16.551|
+instr<20>      |aluout<3>      |   16.770|
+instr<20>      |aluout<4>      |   17.628|
+instr<20>      |aluout<5>      |   17.016|
+instr<20>      |aluout<6>      |   16.820|
+instr<20>      |aluout<7>      |   17.163|
+instr<20>      |aluout<8>      |   18.370|
+instr<20>      |aluout<9>      |   18.370|
+instr<20>      |aluout<10>     |   18.598|
+instr<20>      |aluout<11>     |   18.504|
+instr<20>      |aluout<12>     |   18.167|
+instr<20>      |aluout<13>     |   18.551|
+instr<20>      |aluout<14>     |   18.459|
+instr<20>      |aluout<15>     |   18.783|
+instr<20>      |aluout<16>     |   18.969|
+instr<20>      |aluout<17>     |   19.796|
+instr<20>      |aluout<18>     |   18.858|
+instr<20>      |aluout<19>     |   19.985|
+instr<20>      |aluout<20>     |   19.382|
+instr<20>      |aluout<21>     |   18.740|
+instr<20>      |aluout<22>     |   18.449|
+instr<20>      |aluout<23>     |   20.578|
+instr<20>      |aluout<24>     |   20.445|
+instr<20>      |aluout<25>     |   19.895|
+instr<20>      |aluout<26>     |   20.425|
+instr<20>      |aluout<27>     |   20.538|
+instr<20>      |aluout<28>     |   20.393|
+instr<20>      |aluout<29>     |   19.984|
+instr<20>      |aluout<30>     |   20.044|
+instr<20>      |aluout<31>     |   20.729|
+instr<20>      |writedata<0>   |   13.616|
+instr<20>      |writedata<1>   |   14.112|
+instr<20>      |writedata<2>   |   13.243|
+instr<20>      |writedata<3>   |   14.192|
+instr<20>      |writedata<4>   |   14.821|
+instr<20>      |writedata<5>   |   14.542|
+instr<20>      |writedata<6>   |   14.988|
+instr<20>      |writedata<7>   |   13.427|
+instr<20>      |writedata<8>   |   15.634|
+instr<20>      |writedata<9>   |   15.222|
+instr<20>      |writedata<10>  |   13.406|
+instr<20>      |writedata<11>  |   14.764|
+instr<20>      |writedata<12>  |   14.023|
+instr<20>      |writedata<13>  |   14.162|
+instr<20>      |writedata<14>  |   13.546|
+instr<20>      |writedata<15>  |   13.542|
+instr<20>      |writedata<16>  |   14.245|
+instr<20>      |writedata<17>  |   13.550|
+instr<20>      |writedata<18>  |   13.627|
+instr<20>      |writedata<19>  |   11.693|
+instr<20>      |writedata<20>  |   13.719|
+instr<20>      |writedata<21>  |   12.764|
+instr<20>      |writedata<22>  |   13.859|
+instr<20>      |writedata<23>  |   13.482|
+instr<20>      |writedata<24>  |   13.217|
+instr<20>      |writedata<25>  |   13.351|
+instr<20>      |writedata<26>  |   13.683|
+instr<20>      |writedata<27>  |   13.334|
+instr<20>      |writedata<28>  |   13.800|
+instr<20>      |writedata<29>  |   12.823|
+instr<20>      |writedata<30>  |   12.292|
+instr<20>      |writedata<31>  |   11.071|
+instr<21>      |aluout<0>      |   16.924|
+instr<21>      |aluout<1>      |   14.953|
+instr<21>      |aluout<2>      |   15.156|
+instr<21>      |aluout<3>      |   15.375|
+instr<21>      |aluout<4>      |   16.233|
+instr<21>      |aluout<5>      |   15.621|
+instr<21>      |aluout<6>      |   15.425|
+instr<21>      |aluout<7>      |   15.768|
+instr<21>      |aluout<8>      |   16.479|
+instr<21>      |aluout<9>      |   16.102|
+instr<21>      |aluout<10>     |   15.809|
+instr<21>      |aluout<11>     |   15.715|
+instr<21>      |aluout<12>     |   15.378|
+instr<21>      |aluout<13>     |   15.762|
+instr<21>      |aluout<14>     |   15.670|
+instr<21>      |aluout<15>     |   15.994|
+instr<21>      |aluout<16>     |   16.180|
+instr<21>      |aluout<17>     |   17.007|
+instr<21>      |aluout<18>     |   16.069|
+instr<21>      |aluout<19>     |   17.196|
+instr<21>      |aluout<20>     |   16.593|
+instr<21>      |aluout<21>     |   15.951|
+instr<21>      |aluout<22>     |   15.660|
+instr<21>      |aluout<23>     |   17.789|
+instr<21>      |aluout<24>     |   17.656|
+instr<21>      |aluout<25>     |   17.106|
+instr<21>      |aluout<26>     |   17.636|
+instr<21>      |aluout<27>     |   17.749|
+instr<21>      |aluout<28>     |   17.604|
+instr<21>      |aluout<29>     |   17.195|
+instr<21>      |aluout<30>     |   17.255|
+instr<21>      |aluout<31>     |   17.940|
+instr<22>      |aluout<0>      |   17.415|
+instr<22>      |aluout<1>      |   14.809|
+instr<22>      |aluout<2>      |   15.012|
+instr<22>      |aluout<3>      |   15.231|
+instr<22>      |aluout<4>      |   16.089|
+instr<22>      |aluout<5>      |   15.477|
+instr<22>      |aluout<6>      |   15.371|
+instr<22>      |aluout<7>      |   15.714|
+instr<22>      |aluout<8>      |   16.425|
+instr<22>      |aluout<9>      |   16.048|
+instr<22>      |aluout<10>     |   15.755|
+instr<22>      |aluout<11>     |   15.661|
+instr<22>      |aluout<12>     |   15.324|
+instr<22>      |aluout<13>     |   15.708|
+instr<22>      |aluout<14>     |   15.616|
+instr<22>      |aluout<15>     |   15.940|
+instr<22>      |aluout<16>     |   16.126|
+instr<22>      |aluout<17>     |   16.953|
+instr<22>      |aluout<18>     |   16.180|
+instr<22>      |aluout<19>     |   17.307|
+instr<22>      |aluout<20>     |   17.084|
+instr<22>      |aluout<21>     |   16.442|
+instr<22>      |aluout<22>     |   16.151|
+instr<22>      |aluout<23>     |   18.280|
+instr<22>      |aluout<24>     |   18.147|
+instr<22>      |aluout<25>     |   17.597|
+instr<22>      |aluout<26>     |   18.127|
+instr<22>      |aluout<27>     |   18.240|
+instr<22>      |aluout<28>     |   18.095|
+instr<22>      |aluout<29>     |   17.686|
+instr<22>      |aluout<30>     |   17.746|
+instr<22>      |aluout<31>     |   18.431|
+instr<23>      |aluout<0>      |   17.179|
+instr<23>      |aluout<1>      |   14.242|
+instr<23>      |aluout<2>      |   14.445|
+instr<23>      |aluout<3>      |   14.664|
+instr<23>      |aluout<4>      |   15.686|
+instr<23>      |aluout<5>      |   15.355|
+instr<23>      |aluout<6>      |   15.680|
+instr<23>      |aluout<7>      |   16.023|
+instr<23>      |aluout<8>      |   16.734|
+instr<23>      |aluout<9>      |   16.357|
+instr<23>      |aluout<10>     |   16.064|
+instr<23>      |aluout<11>     |   15.970|
+instr<23>      |aluout<12>     |   15.633|
+instr<23>      |aluout<13>     |   16.017|
+instr<23>      |aluout<14>     |   15.925|
+instr<23>      |aluout<15>     |   16.249|
+instr<23>      |aluout<16>     |   16.435|
+instr<23>      |aluout<17>     |   17.262|
+instr<23>      |aluout<18>     |   16.324|
+instr<23>      |aluout<19>     |   17.451|
+instr<23>      |aluout<20>     |   16.848|
+instr<23>      |aluout<21>     |   16.206|
+instr<23>      |aluout<22>     |   15.915|
+instr<23>      |aluout<23>     |   18.044|
+instr<23>      |aluout<24>     |   17.911|
+instr<23>      |aluout<25>     |   17.361|
+instr<23>      |aluout<26>     |   17.891|
+instr<23>      |aluout<27>     |   18.004|
+instr<23>      |aluout<28>     |   17.859|
+instr<23>      |aluout<29>     |   17.450|
+instr<23>      |aluout<30>     |   17.510|
+instr<23>      |aluout<31>     |   18.195|
+instr<24>      |aluout<0>      |   16.982|
+instr<24>      |aluout<1>      |   15.011|
+instr<24>      |aluout<2>      |   15.214|
+instr<24>      |aluout<3>      |   15.433|
+instr<24>      |aluout<4>      |   16.291|
+instr<24>      |aluout<5>      |   15.679|
+instr<24>      |aluout<6>      |   15.483|
+instr<24>      |aluout<7>      |   15.826|
+instr<24>      |aluout<8>      |   16.537|
+instr<24>      |aluout<9>      |   16.160|
+instr<24>      |aluout<10>     |   15.867|
+instr<24>      |aluout<11>     |   15.773|
+instr<24>      |aluout<12>     |   15.436|
+instr<24>      |aluout<13>     |   15.820|
+instr<24>      |aluout<14>     |   15.728|
+instr<24>      |aluout<15>     |   16.052|
+instr<24>      |aluout<16>     |   16.238|
+instr<24>      |aluout<17>     |   17.065|
+instr<24>      |aluout<18>     |   16.127|
+instr<24>      |aluout<19>     |   17.254|
+instr<24>      |aluout<20>     |   16.651|
+instr<24>      |aluout<21>     |   16.009|
+instr<24>      |aluout<22>     |   15.718|
+instr<24>      |aluout<23>     |   17.847|
+instr<24>      |aluout<24>     |   17.714|
+instr<24>      |aluout<25>     |   17.164|
+instr<24>      |aluout<26>     |   17.694|
+instr<24>      |aluout<27>     |   17.807|
+instr<24>      |aluout<28>     |   17.662|
+instr<24>      |aluout<29>     |   17.253|
+instr<24>      |aluout<30>     |   17.313|
+instr<24>      |aluout<31>     |   17.998|
+instr<25>      |aluout<0>      |   17.278|
+instr<25>      |aluout<1>      |   14.675|
+instr<25>      |aluout<2>      |   14.878|
+instr<25>      |aluout<3>      |   15.097|
+instr<25>      |aluout<4>      |   16.119|
+instr<25>      |aluout<5>      |   15.507|
+instr<25>      |aluout<6>      |   15.614|
+instr<25>      |aluout<7>      |   15.957|
+instr<25>      |aluout<8>      |   16.668|
+instr<25>      |aluout<9>      |   16.291|
+instr<25>      |aluout<10>     |   15.998|
+instr<25>      |aluout<11>     |   15.904|
+instr<25>      |aluout<12>     |   15.567|
+instr<25>      |aluout<13>     |   15.951|
+instr<25>      |aluout<14>     |   15.859|
+instr<25>      |aluout<15>     |   16.183|
+instr<25>      |aluout<16>     |   16.369|
+instr<25>      |aluout<17>     |   17.196|
+instr<25>      |aluout<18>     |   16.423|
+instr<25>      |aluout<19>     |   17.550|
+instr<25>      |aluout<20>     |   16.947|
+instr<25>      |aluout<21>     |   16.305|
+instr<25>      |aluout<22>     |   16.014|
+instr<25>      |aluout<23>     |   18.143|
+instr<25>      |aluout<24>     |   18.010|
+instr<25>      |aluout<25>     |   17.460|
+instr<25>      |aluout<26>     |   17.990|
+instr<25>      |aluout<27>     |   18.103|
+instr<25>      |aluout<28>     |   17.958|
+instr<25>      |aluout<29>     |   17.549|
+instr<25>      |aluout<30>     |   17.609|
+instr<25>      |aluout<31>     |   18.294|
+instr<26>      |aluout<0>      |   18.677|
+instr<26>      |aluout<1>      |   16.656|
+instr<26>      |aluout<2>      |   16.859|
+instr<26>      |aluout<3>      |   17.078|
+instr<26>      |aluout<4>      |   17.936|
+instr<26>      |aluout<5>      |   17.324|
+instr<26>      |aluout<6>      |   17.128|
+instr<26>      |aluout<7>      |   17.471|
+instr<26>      |aluout<8>      |   18.182|
+instr<26>      |aluout<9>      |   17.805|
+instr<26>      |aluout<10>     |   17.512|
+instr<26>      |aluout<11>     |   17.418|
+instr<26>      |aluout<12>     |   17.081|
+instr<26>      |aluout<13>     |   17.465|
+instr<26>      |aluout<14>     |   17.373|
+instr<26>      |aluout<15>     |   17.697|
+instr<26>      |aluout<16>     |   17.883|
+instr<26>      |aluout<17>     |   18.710|
+instr<26>      |aluout<18>     |   17.772|
+instr<26>      |aluout<19>     |   18.899|
+instr<26>      |aluout<20>     |   18.296|
+instr<26>      |aluout<21>     |   17.654|
+instr<26>      |aluout<22>     |   17.363|
+instr<26>      |aluout<23>     |   19.492|
+instr<26>      |aluout<24>     |   19.359|
+instr<26>      |aluout<25>     |   18.809|
+instr<26>      |aluout<26>     |   19.339|
+instr<26>      |aluout<27>     |   19.452|
+instr<26>      |aluout<28>     |   19.357|
+instr<26>      |aluout<29>     |   18.948|
+instr<26>      |aluout<30>     |   19.008|
+instr<26>      |aluout<31>     |   19.693|
+instr<26>      |memwrite       |    9.614|
+instr<27>      |aluout<0>      |   18.950|
+instr<27>      |aluout<1>      |   16.929|
+instr<27>      |aluout<2>      |   17.132|
+instr<27>      |aluout<3>      |   17.351|
+instr<27>      |aluout<4>      |   18.209|
+instr<27>      |aluout<5>      |   17.597|
+instr<27>      |aluout<6>      |   17.401|
+instr<27>      |aluout<7>      |   17.744|
+instr<27>      |aluout<8>      |   18.455|
+instr<27>      |aluout<9>      |   18.078|
+instr<27>      |aluout<10>     |   17.785|
+instr<27>      |aluout<11>     |   17.691|
+instr<27>      |aluout<12>     |   17.354|
+instr<27>      |aluout<13>     |   17.738|
+instr<27>      |aluout<14>     |   17.646|
+instr<27>      |aluout<15>     |   17.970|
+instr<27>      |aluout<16>     |   18.156|
+instr<27>      |aluout<17>     |   18.983|
+instr<27>      |aluout<18>     |   18.045|
+instr<27>      |aluout<19>     |   19.172|
+instr<27>      |aluout<20>     |   18.569|
+instr<27>      |aluout<21>     |   17.927|
+instr<27>      |aluout<22>     |   17.636|
+instr<27>      |aluout<23>     |   19.765|
+instr<27>      |aluout<24>     |   19.632|
+instr<27>      |aluout<25>     |   19.082|
+instr<27>      |aluout<26>     |   19.612|
+instr<27>      |aluout<27>     |   19.725|
+instr<27>      |aluout<28>     |   19.630|
+instr<27>      |aluout<29>     |   19.221|
+instr<27>      |aluout<30>     |   19.281|
+instr<27>      |aluout<31>     |   19.966|
+instr<27>      |memwrite       |    9.887|
+instr<28>      |aluout<0>      |   20.018|
+instr<28>      |aluout<1>      |   17.997|
+instr<28>      |aluout<2>      |   18.200|
+instr<28>      |aluout<3>      |   18.419|
+instr<28>      |aluout<4>      |   19.277|
+instr<28>      |aluout<5>      |   18.665|
+instr<28>      |aluout<6>      |   18.469|
+instr<28>      |aluout<7>      |   18.812|
+instr<28>      |aluout<8>      |   19.523|
+instr<28>      |aluout<9>      |   19.146|
+instr<28>      |aluout<10>     |   18.853|
+instr<28>      |aluout<11>     |   18.759|
+instr<28>      |aluout<12>     |   18.422|
+instr<28>      |aluout<13>     |   18.806|
+instr<28>      |aluout<14>     |   18.714|
+instr<28>      |aluout<15>     |   19.038|
+instr<28>      |aluout<16>     |   19.224|
+instr<28>      |aluout<17>     |   20.051|
+instr<28>      |aluout<18>     |   19.113|
+instr<28>      |aluout<19>     |   20.240|
+instr<28>      |aluout<20>     |   19.637|
+instr<28>      |aluout<21>     |   18.995|
+instr<28>      |aluout<22>     |   18.704|
+instr<28>      |aluout<23>     |   20.833|
+instr<28>      |aluout<24>     |   20.700|
+instr<28>      |aluout<25>     |   20.150|
+instr<28>      |aluout<26>     |   20.680|
+instr<28>      |aluout<27>     |   20.793|
+instr<28>      |aluout<28>     |   20.698|
+instr<28>      |aluout<29>     |   20.289|
+instr<28>      |aluout<30>     |   20.349|
+instr<28>      |aluout<31>     |   21.034|
+instr<28>      |memwrite       |   10.955|
+instr<29>      |aluout<0>      |   18.855|
+instr<29>      |aluout<1>      |   16.113|
+instr<29>      |aluout<2>      |   16.572|
+instr<29>      |aluout<3>      |   16.965|
+instr<29>      |aluout<4>      |   18.095|
+instr<29>      |aluout<5>      |   17.483|
+instr<29>      |aluout<6>      |   17.287|
+instr<29>      |aluout<7>      |   17.630|
+instr<29>      |aluout<8>      |   18.405|
+instr<29>      |aluout<9>      |   18.028|
+instr<29>      |aluout<10>     |   17.740|
+instr<29>      |aluout<11>     |   17.646|
+instr<29>      |aluout<12>     |   17.309|
+instr<29>      |aluout<13>     |   17.693|
+instr<29>      |aluout<14>     |   17.601|
+instr<29>      |aluout<15>     |   17.925|
+instr<29>      |aluout<16>     |   18.111|
+instr<29>      |aluout<17>     |   18.938|
+instr<29>      |aluout<18>     |   18.000|
+instr<29>      |aluout<19>     |   19.127|
+instr<29>      |aluout<20>     |   18.524|
+instr<29>      |aluout<21>     |   17.882|
+instr<29>      |aluout<22>     |   17.591|
+instr<29>      |aluout<23>     |   19.720|
+instr<29>      |aluout<24>     |   19.587|
+instr<29>      |aluout<25>     |   19.037|
+instr<29>      |aluout<26>     |   19.567|
+instr<29>      |aluout<27>     |   19.680|
+instr<29>      |aluout<28>     |   19.535|
+instr<29>      |aluout<29>     |   19.126|
+instr<29>      |aluout<30>     |   19.186|
+instr<29>      |aluout<31>     |   19.871|
+instr<29>      |memwrite       |    8.477|
+instr<31>      |aluout<0>      |   19.392|
+instr<31>      |aluout<1>      |   17.371|
+instr<31>      |aluout<2>      |   17.574|
+instr<31>      |aluout<3>      |   17.793|
+instr<31>      |aluout<4>      |   18.651|
+instr<31>      |aluout<5>      |   18.039|
+instr<31>      |aluout<6>      |   17.843|
+instr<31>      |aluout<7>      |   18.186|
+instr<31>      |aluout<8>      |   18.897|
+instr<31>      |aluout<9>      |   18.520|
+instr<31>      |aluout<10>     |   18.227|
+instr<31>      |aluout<11>     |   18.133|
+instr<31>      |aluout<12>     |   17.796|
+instr<31>      |aluout<13>     |   18.180|
+instr<31>      |aluout<14>     |   18.088|
+instr<31>      |aluout<15>     |   18.412|
+instr<31>      |aluout<16>     |   18.598|
+instr<31>      |aluout<17>     |   19.425|
+instr<31>      |aluout<18>     |   18.487|
+instr<31>      |aluout<19>     |   19.614|
+instr<31>      |aluout<20>     |   19.011|
+instr<31>      |aluout<21>     |   18.369|
+instr<31>      |aluout<22>     |   18.078|
+instr<31>      |aluout<23>     |   20.207|
+instr<31>      |aluout<24>     |   20.074|
+instr<31>      |aluout<25>     |   19.524|
+instr<31>      |aluout<26>     |   20.054|
+instr<31>      |aluout<27>     |   20.167|
+instr<31>      |aluout<28>     |   20.072|
+instr<31>      |aluout<29>     |   19.663|
+instr<31>      |aluout<30>     |   19.723|
+instr<31>      |aluout<31>     |   20.408|
+instr<31>      |memwrite       |   10.329|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 29 20:15:34 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 177 MB
+
+
+

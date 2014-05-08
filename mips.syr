@@ -1,0 +1,746 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" in Library work.
+Architecture struct of Entity mips is up to date.
+Architecture struct of Entity controller is up to date.
+Architecture behave of Entity maindec is up to date.
+Architecture behave of Entity aludec is up to date.
+Architecture struct of Entity datapath is up to date.
+Architecture behave of Entity alu is up to date.
+Architecture behave of Entity regfile is up to date.
+Architecture behave of Entity adder is up to date.
+Architecture behave of Entity sl2 is up to date.
+Architecture behave of Entity signext is up to date.
+Architecture asynchronous of Entity flopr is up to date.
+Architecture behave of Entity mux2 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mips> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <maindec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <aludec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <flopr> in library <work> (architecture <asynchronous>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <sl2> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 5
+
+Analyzing hierarchy for entity <signext> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mips> in library <work> (Architecture <struct>).
+Entity <mips> analyzed. Unit <mips> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <struct>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <maindec> in library <work> (Architecture <behave>).
+Entity <maindec> analyzed. Unit <maindec> generated.
+
+Analyzing Entity <aludec> in library <work> (Architecture <behave>).
+Entity <aludec> analyzed. Unit <aludec> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <struct>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing generic Entity <flopr> in library <work> (Architecture <asynchronous>).
+	width = 32
+Entity <flopr> analyzed. Unit <flopr> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <behave>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+Analyzing Entity <sl2> in library <work> (Architecture <behave>).
+Entity <sl2> analyzed. Unit <sl2> generated.
+
+Analyzing generic Entity <mux2.1> in library <work> (Architecture <behave>).
+	width = 32
+Entity <mux2.1> analyzed. Unit <mux2.1> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behave>).
+WARNING:Xst:819 - "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" line 319: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <mem>
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing generic Entity <mux2.2> in library <work> (Architecture <behave>).
+	width = 5
+Entity <mux2.2> analyzed. Unit <mux2.2> generated.
+
+Analyzing Entity <signext> in library <work> (Architecture <behave>).
+Entity <signext> analyzed. Unit <signext> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behave>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <maindec>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <maindec> synthesized.
+
+
+Synthesizing Unit <aludec>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <aludec> synthesized.
+
+
+Synthesizing Unit <flopr>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+    Found 32-bit adder for signal <y>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <sl2>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <sl2> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+    Found 32x32-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 32x32-bit dual-port RAM <Mram_mem_ren> for signal <mem>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <mux2_2>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <mux2_2> synthesized.
+
+
+Synthesizing Unit <signext>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <signext> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+    Found 32-bit 4-to-1 multiplexer for signal <result>.
+    Found 32-bit adder carry in for signal <sum>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <mips>.
+    Related source file is "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd".
+Unit <mips> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit adder carry in                                 : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra1>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra2>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit adder carry in                                 : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips> ...
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <datapath> ...
+WARNING:Xst:1710 - FF/Latch <dp/pcreg/q_0> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/pcreg/q_1> (without init value) has a constant value of 0 in block <mips>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mips, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mips.ngr
+Top Level Output File Name         : mips
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 163
+
+Cell Usage :
+# BELS                             : 624
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 29
+#      LUT2                        : 33
+#      LUT3                        : 132
+#      LUT3_L                      : 23
+#      LUT4                        : 183
+#      LUT4_D                      : 3
+#      LUT4_L                      : 16
+#      MUXCY                       : 98
+#      MUXF5                       : 12
+#      VCC                         : 1
+#      XORCY                       : 92
+# FlipFlops/Latches                : 30
+#      FDC                         : 30
+# RAMS                             : 128
+#      RAM16X1D                    : 128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 161
+#      IBUF                        : 64
+#      OBUF                        : 97
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      305  out of   4656     6%  
+ Number of Slice Flip Flops:             30  out of   9312     0%  
+ Number of 4 input LUTs:                676  out of   9312     7%  
+    Number used as logic:               420
+    Number used as RAMs:                256
+ Number of IOs:                         163
+ Number of bonded IOBs:                 162  out of    232    69%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 158   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 30    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.358ns (Maximum Frequency: 69.650MHz)
+   Minimum input arrival time before clock: 17.279ns
+   Maximum output required time after clock: 13.749ns
+   Maximum combinational path delay: 16.670ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.358ns (frequency: 69.650MHz)
+  Total number of paths / destination ports: 126576 / 158
+-------------------------------------------------------------------------
+Delay:               14.358ns (Levels of Logic = 40)
+  Source:            dp/rf/Mram_mem_ren1 (RAM)
+  Destination:       dp/pcreg/q_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: dp/rf/Mram_mem_ren1 to dp/pcreg/q_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   1.901   0.455  dp/rf/Mram_mem_ren1 (dp/rf/N135)
+     LUT4:I2->O            2   0.704   0.482  dp/rf/rd2<0>1 (writedata_0_OBUF)
+     LUT3:I2->O            2   0.704   0.482  dp/srcbmux/y<0>1 (dp/srcb<0>)
+     LUT3:I2->O            1   0.704   0.000  dp/mainalu/Madd_sum_lut<0> (dp/mainalu/Madd_sum_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  dp/mainalu/Madd_sum_cy<0> (dp/mainalu/Madd_sum_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<1> (dp/mainalu/Madd_sum_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<2> (dp/mainalu/Madd_sum_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<3> (dp/mainalu/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<4> (dp/mainalu/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<5> (dp/mainalu/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<6> (dp/mainalu/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<7> (dp/mainalu/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<8> (dp/mainalu/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<9> (dp/mainalu/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<10> (dp/mainalu/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<11> (dp/mainalu/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<12> (dp/mainalu/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<13> (dp/mainalu/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<14> (dp/mainalu/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<15> (dp/mainalu/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<16> (dp/mainalu/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<17> (dp/mainalu/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<18> (dp/mainalu/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<19> (dp/mainalu/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<20> (dp/mainalu/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<21> (dp/mainalu/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<22> (dp/mainalu/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<23> (dp/mainalu/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<24> (dp/mainalu/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<25> (dp/mainalu/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<26> (dp/mainalu/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<27> (dp/mainalu/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<28> (dp/mainalu/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<29> (dp/mainalu/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  dp/mainalu/Madd_sum_cy<30> (dp/mainalu/Madd_sum_cy<30>)
+     XORCY:CI->O           2   0.804   0.451  dp/mainalu/Madd_sum_xor<31> (dp/mainalu/slt<0>)
+     LUT4:I3->O            1   0.704   0.000  dp/mainalu/Mmux_result_3 (dp/mainalu/Mmux_result_3)
+     MUXF5:I1->O           3   0.321   0.535  dp/mainalu/Mmux_result_2_f5 (aluout_0_OBUF)
+     LUT4:I3->O            1   0.704   0.000  cont/pcsrc_wg_lut<8> (cont/pcsrc_wg_lut<8>)
+     MUXCY:S->O           30   0.864   1.297  cont/pcsrc_wg_cy<8> (cont/pcsrc_wg_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  dp/pcmux/y<9> (dp/pcnext<9>)
+     FDC:D                     0.308          dp/pcreg/q_9
+    ----------------------------------------
+    Total                     14.358ns (10.656ns logic, 3.702ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1442723 / 1310
+-------------------------------------------------------------------------
+Offset:              17.279ns (Levels of Logic = 41)
+  Source:            instr<28> (PAD)
+  Destination:       dp/pcreg/q_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: instr<28> to dp/pcreg/q_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.218   1.181  instr_28_IBUF (instr_28_IBUF)
+     LUT4:I1->O           37   0.704   1.299  cont/md/controls<6>11 (N01)
+     LUT3:I2->O           52   0.704   1.304  cont/md/controls<6>3 (alusrc)
+     LUT3:I2->O            1   0.704   0.595  dp/srcbmux/y<1>1_SW1 (N261)
+     LUT4:I0->O            1   0.704   0.000  dp/mainalu/Madd_sum_lut<1> (dp/mainalu/Madd_sum_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  dp/mainalu/Madd_sum_cy<1> (dp/mainalu/Madd_sum_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<2> (dp/mainalu/Madd_sum_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<3> (dp/mainalu/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<4> (dp/mainalu/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<5> (dp/mainalu/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<6> (dp/mainalu/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<7> (dp/mainalu/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<8> (dp/mainalu/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<9> (dp/mainalu/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<10> (dp/mainalu/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<11> (dp/mainalu/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<12> (dp/mainalu/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<13> (dp/mainalu/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<14> (dp/mainalu/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<15> (dp/mainalu/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<16> (dp/mainalu/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<17> (dp/mainalu/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<18> (dp/mainalu/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<19> (dp/mainalu/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<20> (dp/mainalu/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<21> (dp/mainalu/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<22> (dp/mainalu/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<23> (dp/mainalu/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<24> (dp/mainalu/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<25> (dp/mainalu/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<26> (dp/mainalu/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<27> (dp/mainalu/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<28> (dp/mainalu/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<29> (dp/mainalu/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  dp/mainalu/Madd_sum_cy<30> (dp/mainalu/Madd_sum_cy<30>)
+     XORCY:CI->O           2   0.804   0.451  dp/mainalu/Madd_sum_xor<31> (dp/mainalu/slt<0>)
+     LUT4:I3->O            1   0.704   0.000  dp/mainalu/Mmux_result_3 (dp/mainalu/Mmux_result_3)
+     MUXF5:I1->O           3   0.321   0.535  dp/mainalu/Mmux_result_2_f5 (aluout_0_OBUF)
+     LUT4:I3->O            1   0.704   0.000  cont/pcsrc_wg_lut<8> (cont/pcsrc_wg_lut<8>)
+     MUXCY:S->O           30   0.864   1.297  cont/pcsrc_wg_cy<8> (cont/pcsrc_wg_cy<8>)
+     LUT3:I2->O            1   0.704   0.000  dp/pcmux/y<9> (dp/pcnext<9>)
+     FDC:D                     0.308          dp/pcreg/q_9
+    ----------------------------------------
+    Total                     17.279ns (10.618ns logic, 6.661ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3518 / 94
+-------------------------------------------------------------------------
+Offset:              13.749ns (Levels of Logic = 38)
+  Source:            dp/rf/Mram_mem_ren1 (RAM)
+  Destination:       aluout<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dp/rf/Mram_mem_ren1 to aluout<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   1.901   0.455  dp/rf/Mram_mem_ren1 (dp/rf/N135)
+     LUT4:I2->O            2   0.704   0.482  dp/rf/rd2<0>1 (writedata_0_OBUF)
+     LUT3:I2->O            2   0.704   0.482  dp/srcbmux/y<0>1 (dp/srcb<0>)
+     LUT3:I2->O            1   0.704   0.000  dp/mainalu/Madd_sum_lut<0> (dp/mainalu/Madd_sum_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  dp/mainalu/Madd_sum_cy<0> (dp/mainalu/Madd_sum_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<1> (dp/mainalu/Madd_sum_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<2> (dp/mainalu/Madd_sum_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<3> (dp/mainalu/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<4> (dp/mainalu/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<5> (dp/mainalu/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<6> (dp/mainalu/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<7> (dp/mainalu/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<8> (dp/mainalu/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<9> (dp/mainalu/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<10> (dp/mainalu/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<11> (dp/mainalu/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<12> (dp/mainalu/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<13> (dp/mainalu/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<14> (dp/mainalu/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<15> (dp/mainalu/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<16> (dp/mainalu/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<17> (dp/mainalu/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<18> (dp/mainalu/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<19> (dp/mainalu/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<20> (dp/mainalu/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<21> (dp/mainalu/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<22> (dp/mainalu/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<23> (dp/mainalu/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<24> (dp/mainalu/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<25> (dp/mainalu/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<26> (dp/mainalu/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<27> (dp/mainalu/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<28> (dp/mainalu/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<29> (dp/mainalu/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  dp/mainalu/Madd_sum_cy<30> (dp/mainalu/Madd_sum_cy<30>)
+     XORCY:CI->O           2   0.804   0.451  dp/mainalu/Madd_sum_xor<31> (dp/mainalu/slt<0>)
+     LUT4:I3->O            1   0.704   0.000  dp/mainalu/Mmux_result_3 (dp/mainalu/Mmux_result_3)
+     MUXF5:I1->O           3   0.321   0.531  dp/mainalu/Mmux_result_2_f5 (aluout_0_OBUF)
+     OBUF:I->O                 3.272          aluout_0_OBUF (aluout<0>)
+    ----------------------------------------
+    Total                     13.749ns (11.348ns logic, 2.401ns route)
+                                       (82.5% logic, 17.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 42564 / 65
+-------------------------------------------------------------------------
+Delay:               16.670ns (Levels of Logic = 39)
+  Source:            instr<28> (PAD)
+  Destination:       aluout<0> (PAD)
+
+  Data Path: instr<28> to aluout<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.218   1.181  instr_28_IBUF (instr_28_IBUF)
+     LUT4:I1->O           37   0.704   1.299  cont/md/controls<6>11 (N01)
+     LUT3:I2->O           52   0.704   1.304  cont/md/controls<6>3 (alusrc)
+     LUT3:I2->O            1   0.704   0.595  dp/srcbmux/y<1>1_SW1 (N261)
+     LUT4:I0->O            1   0.704   0.000  dp/mainalu/Madd_sum_lut<1> (dp/mainalu/Madd_sum_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  dp/mainalu/Madd_sum_cy<1> (dp/mainalu/Madd_sum_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<2> (dp/mainalu/Madd_sum_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<3> (dp/mainalu/Madd_sum_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<4> (dp/mainalu/Madd_sum_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<5> (dp/mainalu/Madd_sum_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<6> (dp/mainalu/Madd_sum_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<7> (dp/mainalu/Madd_sum_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<8> (dp/mainalu/Madd_sum_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<9> (dp/mainalu/Madd_sum_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<10> (dp/mainalu/Madd_sum_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<11> (dp/mainalu/Madd_sum_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<12> (dp/mainalu/Madd_sum_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<13> (dp/mainalu/Madd_sum_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<14> (dp/mainalu/Madd_sum_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<15> (dp/mainalu/Madd_sum_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<16> (dp/mainalu/Madd_sum_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<17> (dp/mainalu/Madd_sum_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<18> (dp/mainalu/Madd_sum_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<19> (dp/mainalu/Madd_sum_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<20> (dp/mainalu/Madd_sum_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<21> (dp/mainalu/Madd_sum_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<22> (dp/mainalu/Madd_sum_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<23> (dp/mainalu/Madd_sum_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<24> (dp/mainalu/Madd_sum_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<25> (dp/mainalu/Madd_sum_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<26> (dp/mainalu/Madd_sum_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<27> (dp/mainalu/Madd_sum_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<28> (dp/mainalu/Madd_sum_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  dp/mainalu/Madd_sum_cy<29> (dp/mainalu/Madd_sum_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  dp/mainalu/Madd_sum_cy<30> (dp/mainalu/Madd_sum_cy<30>)
+     XORCY:CI->O           2   0.804   0.451  dp/mainalu/Madd_sum_xor<31> (dp/mainalu/slt<0>)
+     LUT4:I3->O            1   0.704   0.000  dp/mainalu/Mmux_result_3 (dp/mainalu/Mmux_result_3)
+     MUXF5:I1->O           3   0.321   0.531  dp/mainalu/Mmux_result_2_f5 (aluout_0_OBUF)
+     OBUF:I->O                 3.272          aluout_0_OBUF (aluout<0>)
+    ----------------------------------------
+    Total                     16.670ns (11.310ns logic, 5.360ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.76 secs
+ 
+--> 
+
+Total memory usage is 278476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

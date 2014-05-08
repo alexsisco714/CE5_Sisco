@@ -1,0 +1,57 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.78 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.79 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/C16Alex.Sisco/Documents/ISE Projects/CE5_Sisco/mips.vhd" in Library work.
+Entity <mips> compiled.
+Entity <controller> compiled.
+Entity <maindec> compiled.
+Entity <aludec> compiled.
+Entity <datapath> compiled.
+Entity <alu> compiled.
+Entity <regfile> compiled.
+Entity <adder> compiled.
+Entity <sl2> compiled.
+Entity <signext> compiled.
+Entity <flopr> compiled.
+Entity <mux2> compiled.
+Entity <mips> (Architecture <struct>) compiled.
+Entity <controller> (Architecture <struct>) compiled.
+Entity <maindec> (Architecture <behave>) compiled.
+Entity <aludec> (Architecture <behave>) compiled.
+Entity <datapath> (Architecture <struct>) compiled.
+Entity <alu> (Architecture <behave>) compiled.
+Entity <regfile> (Architecture <behave>) compiled.
+Entity <adder> (Architecture <behave>) compiled.
+Entity <sl2> (Architecture <behave>) compiled.
+Entity <signext> (Architecture <behave>) compiled.
+Entity <flopr> (Architecture <asynchronous>) compiled.
+Entity <mux2> (Architecture <behave>) compiled.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.87 secs
+ 
+--> 
+
+Total memory usage is 209628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
